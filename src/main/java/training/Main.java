@@ -41,6 +41,10 @@ public class Main {
 //        context.registerBean("parrot", Parrot.class, parrotSupplier, bc -> bc.setPrimary(true));
 //        Parrot parrot1 = context.getBean(Parrot.class);
 //        System.out.println(parrot1.getName());
+        Parrot parrot2 = context.getBean(Parrot.class);
+        Parrot parrot3 = context.getBean(Parrot.class);
+        System.out.println(parrot2 == parrot3);
+        System.out.println(parrot2.equals(parrot3));
 
     }
 }
